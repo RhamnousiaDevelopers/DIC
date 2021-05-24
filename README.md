@@ -1,7 +1,7 @@
 # DIC
 Debian ISO Creator
 
-Debian ISO Creator (DIC) is a easy to use Debian ISO creator with  simple to use GUI. The steps to install debian ISO Creator are as follows:
+Debian ISO Creator (DIC) is a easy to use Debian ISO creator written in Python with a simple to use GUI. The steps to install debian ISO Creator are as follows:
 
 ![alt text](https://github.com/RhamnousiaDevelopers/DIC/blob/main/DIC.png?raw=true)
 
