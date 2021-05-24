@@ -14,12 +14,12 @@ pip3 --version
 sudo apt install -y git
 sudo apt install python3-pip
 
-#install requirements
-pip3 install -r requirements.txt
-
 #clone the repository
 git clone https://github.com/RhamnousiaDevelopers/DIC
 cd DIC
+
+#install requirements
+pip3 install -r requirements.txt
 
 #start DIC
 python3 DIC.py
