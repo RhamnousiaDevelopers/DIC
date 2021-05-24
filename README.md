@@ -25,4 +25,24 @@ cd DIC
 python3 DIC.py
 ```
 
+When you are in the Chroot enviroment, in order for the rest to work, you have to AT LEAST run these commands:
+```
+apt update && \
+apt install --no-install-recommends \
+    linux-image-amd64 \
+    live-boot \
+    systemd-sysv
 
+apt install --no-install-recommends \
+    network-manager net-tools wireless-tools wpagui \
+    curl openssh-client \
+    blackbox xserver-xorg-core xserver-xorg xinit xterm \
+    nano && \
+apt clean
+
+```
+
+If you want to customize the default root user password use
+```
+passwd root
+```
