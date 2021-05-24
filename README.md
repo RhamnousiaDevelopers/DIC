@@ -46,3 +46,11 @@ If you want to customize the default root user password use
 ```
 passwd root
 ```
+
+After you exit the chroot environment, open a new terminal and paste this before continuing to build the filesystem/EFI
+```
+sudo mkdir -p $HOME/LIVE_BOOT/{staging/{EFI/boot,boot/grub/x86_64-efi,isolinux,live},tmp}
+```
+Now you can press 'Prepare Filesystem'. Then, 'Generate Bootable EFI'.
+
+
