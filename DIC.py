@@ -161,7 +161,7 @@ class Toplevel1:
         top.minsize(1, 1)
         top.maxsize(2945, 1050)
         top.resizable(1,  1)
-        top.title("New Toplevel")
+        top.title("DIC.py")
         top.configure(background="#000000")
         top.configure(highlightcolor="black")
 
