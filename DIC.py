@@ -59,11 +59,8 @@ def launch_chroot():
     os.system("sudo chroot ~/LIVE_BOOT/chroot")
 
 def prep_fs():
-    mkdir = "mkdir -p $HOME/LIVE_BOOT/{{staging/{{EFI/boot,boot/grub/x86_64-efi,isolinux,live}},tmp}}"
-    formatted_mkdir = mkdir.format()
-    os.system(formatted_mkdir)
     os.system("sudo mksquashfs ~/LIVE_BOOT/chroot ~/LIVE_BOOT/staging/live/filesystem.squashfs -e boot")
-    os.system("sudo cp ~/LIVE_BOOT/chroot/boot/vmlinuz-* ~/LIVE_BOOT/staging/live/vmlinuz && cp ~/LIVE_BOOT/chroot/boot/initrd.img-* ~/LIVE_BOOT/staging/live/initrd")   #copy kernel and initramfs to live directory
+    os.system("sudo cp ~/LIVE_BOOT/chroot/boot/vmlinuz-* ~/LIVE_BOOT/staging/live/vmlinuz && sudo cp ~/LIVE_BOOT/chroot/boot/initrd.img-* ~/LIVE_BOOT/staging/live/initrd")   #copy kernel and initramfs to live directory
     isolinux_cfg = """
         cat <<\'EOF\' >$HOME/LIVE_BOOT/staging/isolinux/isolinux.cfg
 UI vesamenu.c32
