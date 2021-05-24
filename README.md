@@ -25,7 +25,7 @@ cd DIC
 python3 DIC.py
 ```
 
-When you are in the Chroot enviroment, in order for the rest to work, you have to AT LEAST run these commands:
+here are some useful installs when you are in the Chroot enviroment.
 ```
 apt update && \
 apt install --no-install-recommends \
